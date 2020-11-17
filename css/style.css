@@ -642,6 +642,7 @@ body {
 .form-btn {
   margin-left: 12px;
   width: 200px;
+  height: 50px;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -675,6 +676,9 @@ body {
   margin-left: 10px;
 }
 
+.form-btn:hover {
+  background-color: #188ce8;
+}
 /* КОНЕЦ ПОДВАЛА*/
 
 /* Портфолио */
@@ -918,18 +922,6 @@ body {
   color: var(--hr-text-color);
 }
 
-.form-field-label {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.166px;
-
-  letter-spacing: 0.01em;
-
-  color: var(--primary-text-color);
-}
-
 .modal-form-input {
   max-width: 448px;
   width: 448px;
@@ -940,8 +932,9 @@ body {
   border-radius: 4px;
   background-color: #fff;
   color: var(--primary-text-color);
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding-left: 42px;
 }
 
 .form-field-label a {
@@ -968,7 +961,11 @@ body {
   cursor: pointer;
 }
 
-.form-icon:hover {
+.form-field:hover .modal-form-icon {
+  fill: var(--primary-accent-color);
+}
+
+.form-field:focus-within .modal-form-input ~ .modal-form-icon {
   fill: var(--primary-accent-color);
 }
 
@@ -979,6 +976,7 @@ body {
   padding-right: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 20px;
 
   color: rgba(117, 117, 117, 0.5);
 }
@@ -988,10 +986,11 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.142;
+  font-size: 12px;
+  line-height: 1.166px;
   letter-spacing: 0.01em;
-  opacity: 1;
+  padding-top: 5px;
+
   transition: opacity 0.3s ease;
 }
 
@@ -1025,4 +1024,67 @@ body {
 
 .btn-modal-send:hover {
   background-color: #188ce8;
+}
+
+.checkbox {
+  padding-left: 1.2em;
+}
+
+.form-input-check {
+  position: absolute;
+  opacity: 0;
+  margin-left: 3.99em;
+  margin-top: 5px;
+}
+
+.form-input-check:checked + .custom-box {
+  border-radius: 2px;
+  background-image: url(../images/Rectangle.svg);
+}
+
+.form-input-check:checked:focus + .custom-box {
+  border-radius: 0.05em;
+  background-image: url(../images/Rectangle.svg);
+}
+
+.form-input-check:focus + .custom-box {
+  background-image: url(../images/empty-checkbox-blue.svg);
+}
+
+.custom-box {
+  position: absolute;
+  margin-left: 3.2em;
+  margin-top: 0.22em;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/empty-checkbox.svg);
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.form-field-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.form-field-agreement {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-left: 14%;
+}
+
+.form-field-agreement a {
+  color: var(--primary-accent-color);
 }

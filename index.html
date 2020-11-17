@@ -362,28 +362,31 @@
           
             <label class="form-field">
               <span class="form-field-label">Имя</span>
+              <input type="text" class="modal-form-input" name="name" required>
               <svg class="modal-form-icon">
                 <use class="form-icon" href="./images/sprite.svg#icon-modal-name"></use>
               </svg>
-              <input type="text" class="modal-form-input" name="name" required>
+              
           
             </label>
           
             <label class="form-field">
               <span class="form-field-label">Телефон</span>
+              <input type="tel" class="modal-form-input" name="tel" required>
               <svg class="modal-form-icon">
                 <use class="form-icon" href="./images/sprite.svg#icon-modal-tel"></use>
               </svg>
-              <input type="tel" class="modal-form-input" name="tel" required>
+              
           
             </label>
           
             <label class="form-field">
               <span class="form-field-label">Почта</span>
+              <input type="email" class="modal-form-input" name="email" required>
               <svg class="modal-form-icon">
                 <use class="form-icon" href="./images/sprite.svg#icon-modal-email"></use>
               </svg>
-              <input type="email" class="modal-form-input" name="email" required>
+              
           
             </label>
             <label class="form-field">
@@ -391,14 +394,17 @@
               <textarea class="modal-form-input comment" name="comment" placeholder="Введите текст"></textarea>
             </label>
           
-            <div class="form-check">
-              <input type="checkbox" class="form-input-check" name="agreement" value="agreement" id="agreement">
-              <label class="form-field-label" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
-            </div>
+            
           
           </form>
           
 
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-input-check" name="agreement" value="agreement" id="agreement" checked>
+          <span class="custom-box"></span>
+          <label class="form-field-agreement" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
+              договора</a></label>
         </div>
         <button class="btn-modal-send">Отправить</button>
         

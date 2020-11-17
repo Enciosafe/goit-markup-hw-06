@@ -931,7 +931,7 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   background-color: #fff;
-  color: var(--primary-text-color);
+  color: var(--hr-text-color);
   margin-top: 2px;
   margin-bottom: 5px;
   padding-left: 42px;
@@ -978,7 +978,7 @@ body {
   padding-bottom: 12px;
   margin-bottom: 20px;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--hr-text-color);
 }
 
 .modal-form-input::-webkit-input-placeholder {

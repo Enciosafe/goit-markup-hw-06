@@ -1,0 +1,35 @@
+.checkbox {
+  padding-left: 1.2em;
+}
+
+.form-input-check {
+  position: absolute;
+  opacity: 0;
+  margin-left: 3.99em;
+  margin-top: 5px;
+}
+
+.form-input-check:checked + .custom-box {
+  border-radius: 2px;
+  background-image: url(../images/Rectangle.svg);
+}
+
+.form-input-check:checked:focus + .custom-box {
+  border-radius: 0.05em;
+  background-image: url(../images/Rectangle.svg);
+}
+
+.form-input-check:focus + .custom-box {
+  background-image: url(../images/empty-checkbox-blue.svg);
+}
+
+.custom-box {
+  position: absolute;
+  margin-left: 3.2em;
+  margin-top: 0.22em;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/empty-checkbox.svg);
+  background-repeat: no-repeat;
+  pointer-events: none;
+}

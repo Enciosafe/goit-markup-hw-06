@@ -1,0 +1,27 @@
+.head {
+  border-bottom: 1px solid #ececec;
+}
+
+.container-head {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.portfolio-page {
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.modal-container {
+  max-width: 441px;
+  padding-left: 41px;
+  padding-right: 39px;
+}
